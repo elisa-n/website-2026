@@ -2,6 +2,6 @@ import { defineConfig } from "vite";
 import { reactRouter } from "@react-router/dev/vite";
 
 export default defineConfig({
-  base: "/website-2026/",
+  base: "/",
   plugins: [reactRouter()],
 });
