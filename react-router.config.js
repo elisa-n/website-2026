@@ -9,9 +9,18 @@ export default {
   // No server at runtime: every page is rendered to a static HTML file at build time.
   ssr: false,
   async prerender({ getStaticPaths }) {
+    const langs = ["fi", "en"];
+    const pages = ["", "/experience", "/contact"];
     return [
       ...new Set([
         ...getStaticPaths(),
+        "/fi",
+        "/fi/blogi",
+        "/fi/kokemus",
+        "/fi/yhteystiedot",
+        "/blog",
+        "/experience",
+        "/contact",
         ...postPaths().map((post) => post.path),
         "/sitemap.xml",
         "/robots.txt",
