@@ -5,7 +5,7 @@ import { postPaths } from "./src/lib/post-files.js";
 /** @type {import('@react-router/dev/config').Config} */
 export default {
   appDirectory: "src",
-  basename: "/website-2026/",
+  basename: "/",
   // No server at runtime: every page is rendered to a static HTML file at build time.
   ssr: false,
   async prerender({ getStaticPaths }) {
